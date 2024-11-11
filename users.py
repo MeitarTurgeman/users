@@ -1,11 +1,11 @@
 from flask import Flask, jsonify
 
-app = Flask('Meitar')
+app = Flask('users')
 
 users = {
-    "1": {"id": 1, "name": "Alice Smith", "email": "alice@example.com"},
-    "2": {"id": 2, "name": "Bob Jones", "email": "bob@example.com"},
-    "3": {"id": 3, "name": "Charlie Brown", "email": "charlie@example.com"}
+    "1": {"id": 1, "name": "Meitar Turgeman", "email": "meitar@gmail.com"},
+    "2": {"id": 2, "name": "Dean Teslar", "email": "dean@gmail.com"},
+    "3": {"id": 3, "name": "Yonatan Zilberman", "email": "yonatan@gmail.com"}
 }
 
 @app.route('/users', methods=["GET"])
